@@ -1,0 +1,7 @@
+{
+  "routes": {
+    "/selectel-test-task": {},
+    "/selectel-test-task/home": {},
+    "/selectel-test-task/menu": {}
+  }
+}
