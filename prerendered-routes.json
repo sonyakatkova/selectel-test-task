@@ -1,7 +1,0 @@
-{
-  "routes": {
-    "/test-app": {},
-    "/test-app/home": {},
-    "/test-app/menu": {}
-  }
-}
