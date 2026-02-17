@@ -1,0 +1,33 @@
+<div class="menu-page">
+    <app-sidebar (categoryChanged)="onCategoryChange($event)"></app-sidebar>
+  
+    <div class="content">
+        <div class="header">
+            
+            <div class="stats">
+                <p>Количество: {{ selectedCount }} шт.</p>
+                <p>Общая стоимость: {{ totalValue }} ₽</p>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h3>{{ currentCategory }} кухня</h3>
+            <div class="menu-list">
+                <div *ngFor="let item of displayedItems" class="menu-item" 
+                     [class.selected]="item.checked">
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            [checked]="item.checked"
+                            (change)="onCheckboxChange(item)"
+                        >
+                        <span class="item-name">{{ item.name }}</span>
+                        <span class="item-value">{{ item.value }} ₽</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <a routerLink="/home" class="back-link">← На главную</a>
+    </div>
+</div>

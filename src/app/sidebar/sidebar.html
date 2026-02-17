@@ -1,0 +1,14 @@
+<div class="sidebar">
+    <h3>Разделы меню</h3>
+    <ul class="category-list" *ngIf="categories.length > 0">
+        <li *ngFor="let category of categories" 
+            class="category-item"
+            [class.active]="category === activeCategory"
+            (click)="selectCategory(category)">
+            {{ category }}
+        </li>
+    </ul>
+    <div *ngIf="categories.length === 0" class="no-categories">
+        Нет доступных разделов
+    </div>
+</div>
