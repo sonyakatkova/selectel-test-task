@@ -1,7 +1,7 @@
 {
   "routes": {
-    "/selectel-test-task": {},
-    "/selectel-test-task/home": {},
-    "/selectel-test-task/menu": {}
+    "/test-app": {},
+    "/test-app/home": {},
+    "/test-app/menu": {}
   }
 }

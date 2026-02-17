@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/selectel-test-task',
+  basePath: '/test-app',
   supportedLocales: {
   "en-US": ""
 },
